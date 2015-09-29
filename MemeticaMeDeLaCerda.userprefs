@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="MemeticaMeDeLaCerda\MemeticaMeDeLaCerda.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.EP7420814F" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MemeticaMeDeLaCerda\SignUpActivity.cs">
+    <Files>
+      <File FileName="MemeticaMeDeLaCerda\InitActivity.cs" Line="36" Column="50" />
+      <File FileName="MemeticaMeDeLaCerda\SignUpActivity.cs" Line="16" Column="42" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MemeticaMeDeLaCerda AndroidDesignerPreferredDevice="Nexus 4" />
+</Properties>
