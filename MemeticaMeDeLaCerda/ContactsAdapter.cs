@@ -156,20 +156,23 @@ namespace MemeticaMeDeLaCerda
 				string contactName = name.Text;
 				var chat = new Intent (activity, typeof(ChatActivity));
 				chat.PutExtra ("ContactName", contactName);
+				Tools.currentContactDeviceID = Tools.contactosUtiles[position].DeviceID;
 				activity.StartActivity (chat);
 			};
 
 			/* Si el contacto no tiene foto de perfil se le pone una por defecto */
+			/*
 			if (contactsList [position].PhotoId == null) {
 				image.SetImageResource (Resource.Drawable.MissingContact);
 			}  
 
-			/* Si el contacto tiene foto de perfil, entonces solo se pone*/
 			else {
 				var contactUri = ContentUris.WithAppendedId (ContactsContract.Contacts.ContentUri, contactsList [position].Id);
 				var contactPhotoUri = Android.Net.Uri.WithAppendedPath (contactUri, Contacts.Photos.ContentDirectory);
 				image.SetImageURI (contactPhotoUri);
 			}
+			*/
+			image.SetImageResource (Resource.Drawable.MissingContact);
 
 			return view;
 		}

@@ -8,6 +8,8 @@ namespace MemeticaMeDeLaCerda
 		public static User usuario = new User ();
 		public static List<User> contactos = new List<User> ();
 		public static List<User> contactosUtiles = new List<User> ();
+		//public static List<Message> mensajes = new List<Message>();
+		public static string currentContactDeviceID = "";
 	}
 }
 

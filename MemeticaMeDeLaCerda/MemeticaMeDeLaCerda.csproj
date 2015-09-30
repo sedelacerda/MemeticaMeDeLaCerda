@@ -89,6 +89,7 @@
     <Compile Include="ContactsActivity.cs" />
     <Compile Include="ContactsAdapter.cs" />
     <Compile Include="ChatActivity.cs" />
+    <Compile Include="Message.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

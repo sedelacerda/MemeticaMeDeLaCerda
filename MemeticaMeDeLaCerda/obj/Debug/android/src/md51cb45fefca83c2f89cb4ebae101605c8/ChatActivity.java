@@ -10,6 +10,7 @@ public class ChatActivity
 	static {
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
+			"n_AddItem:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:__export__\n" +
 			"";
 		mono.android.Runtime.register ("MemeticaMeDeLaCerda.ChatActivity, MemeticaMeDeLaCerda, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", ChatActivity.class, __md_methods);
 	}
@@ -29,6 +30,14 @@ public class ChatActivity
 	}
 
 	private native void n_onCreate (android.os.Bundle p0);
+
+
+	public void AddItem (java.lang.String p0, java.lang.String p1, java.lang.String p2)
+	{
+		n_AddItem (p0, p1, p2);
+	}
+
+	private native void n_AddItem (java.lang.String p0, java.lang.String p1, java.lang.String p2);
 
 	java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)

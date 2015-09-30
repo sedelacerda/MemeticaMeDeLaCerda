@@ -39,6 +39,7 @@ namespace MemeticaMeDeLaCerda
 				 * para que pueda ser mostrado en la vista del chat */
 				var chat = new Intent (this, typeof(ChatActivity));
 				chat.PutExtra ("ContactName", contactName);
+				Tools.currentContactDeviceID = Tools.contactosUtiles[position].DeviceID;
 				StartActivity (chat);
 			};
 		}
