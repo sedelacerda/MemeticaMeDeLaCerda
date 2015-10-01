@@ -12,10 +12,11 @@ using System.IO;
 using Android.Telephony;
 using Android.Content;
 using System.Collections.Generic;
+using System.Timers;
 
 namespace MemeticaMeDeLaCerda
 {
-	[Activity (Label = "ChatActivity")]			
+	[Activity (Label = "ChatActivity", Icon="@drawable/ContactsMenu")]			
 	public class ChatActivity : Activity
 	{
 		//Mobile Service Client reference
@@ -23,6 +24,7 @@ namespace MemeticaMeDeLaCerda
 
 		//Mobile Service sync table used to access data
 		private IMobileServiceSyncTable<Message> MessageTable;
+
 
 		//Adapter to map the items list to the view
 		//private ToDoItemAdapter adapter;
@@ -35,13 +37,14 @@ namespace MemeticaMeDeLaCerda
 		string contactName = "";
 		string contactDeviceID = "";
 		List<Message> mensajes = new List<Message> ();
+		ListView TVmessages;
 
 
 		protected override async void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
 			SetContentView (Resource.Layout.Chat);
-
+			TVmessages = FindViewById<ListView> (Resource.Id.messagesContainer);
 			/* Recibimos el parametro (nombre del contacto con que se va a chatear) */
 			contactName = Intent.GetStringExtra ("ContactName") ?? "No Name";
 			contactDeviceID = Tools.currentContactDeviceID;
@@ -73,6 +76,7 @@ namespace MemeticaMeDeLaCerda
 				ETMessage.Text = "";
 			};
 
+
 		}
 
 		// Refresca la lista de contactos
@@ -90,6 +94,21 @@ namespace MemeticaMeDeLaCerda
 				mensajes = await MessageTable.Where (item => 
 					(item.Emisor == Tools.usuario.DeviceID && item.Receptor == contactDeviceID) | 
 					(item.Emisor == contactDeviceID && item.Receptor == Tools.usuario.DeviceID) ).ToListAsync ();
+				
+				string[] textos = new string[mensajes.Count];
+
+				for(int i=0; i<mensajes.Count; i++){
+					if(mensajes[i].Emisor == Tools.usuario.DeviceID){
+						textos[i] = "Yo: "+ mensajes[i].Texto;
+					}
+					else{
+						textos[i] = contactName+": "+mensajes[i].Texto;
+					}
+				}
+
+				ArrayAdapter adapter = new ArrayAdapter<String>(this, Android.Resource.Layout.SimpleListItem1,textos);
+				TVmessages.SetAdapter(adapter);
+
 				/*
 				mensajes.Clear();
 

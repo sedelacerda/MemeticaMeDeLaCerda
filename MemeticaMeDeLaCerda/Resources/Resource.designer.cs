@@ -69,50 +69,47 @@ namespace MemeticaMeDeLaCerda
 			// aapt resource value: 0x7f070007
 			public const int BTEnviar = 2131165191;
 			
-			// aapt resource value: 0x7f070014
-			public const int BTRegistrar = 2131165204;
-			
-			// aapt resource value: 0x7f07000c
-			public const int ContactImage = 2131165196;
-			
-			// aapt resource value: 0x7f07000d
-			public const int ContactName = 2131165197;
+			// aapt resource value: 0x7f070013
+			public const int BTRegistrar = 2131165203;
 			
 			// aapt resource value: 0x7f07000b
-			public const int ContactsList = 2131165195;
+			public const int ContactImage = 2131165195;
 			
-			// aapt resource value: 0x7f07000e
-			public const int ContactsListView = 2131165198;
+			// aapt resource value: 0x7f07000c
+			public const int ContactName = 2131165196;
 			
-			// aapt resource value: 0x7f070011
-			public const int ETNombreUsuario = 2131165201;
+			// aapt resource value: 0x7f07000a
+			public const int ContactsList = 2131165194;
 			
-			// aapt resource value: 0x7f070013
-			public const int ETNumeroTelefono = 2131165203;
+			// aapt resource value: 0x7f07000d
+			public const int ContactsListView = 2131165197;
+			
+			// aapt resource value: 0x7f070010
+			public const int ETNombreUsuario = 2131165200;
+			
+			// aapt resource value: 0x7f070012
+			public const int ETNumeroTelefono = 2131165202;
 			
 			// aapt resource value: 0x7f070000
 			public const int LinearLayout1 = 2131165184;
 			
+			// aapt resource value: 0x7f07000e
+			public const int TVMemeticame = 2131165198;
+			
 			// aapt resource value: 0x7f07000f
-			public const int TVMemeticame = 2131165199;
+			public const int TVNombreUsuario = 2131165199;
 			
-			// aapt resource value: 0x7f070010
-			public const int TVNombreUsuario = 2131165200;
-			
-			// aapt resource value: 0x7f070012
-			public const int TVNumeroTelefono = 2131165202;
+			// aapt resource value: 0x7f070011
+			public const int TVNumeroTelefono = 2131165201;
 			
 			// aapt resource value: 0x7f070003
 			public const int buttonAddToDo = 2131165187;
 			
-			// aapt resource value: 0x7f070015
-			public const int checkToDoItem = 2131165205;
+			// aapt resource value: 0x7f070014
+			public const int checkToDoItem = 2131165204;
 			
 			// aapt resource value: 0x7f070005
 			public const int container = 2131165189;
-			
-			// aapt resource value: 0x7f07000a
-			public const int friendLabel = 2131165194;
 			
 			// aapt resource value: 0x7f070004
 			public const int listViewToDo = 2131165188;
@@ -120,8 +117,8 @@ namespace MemeticaMeDeLaCerda
 			// aapt resource value: 0x7f070009
 			public const int meLbl = 2131165193;
 			
-			// aapt resource value: 0x7f070016
-			public const int menu_refresh = 2131165206;
+			// aapt resource value: 0x7f070015
+			public const int menu_refresh = 2131165205;
 			
 			// aapt resource value: 0x7f070006
 			public const int messageEdit = 2131165190;

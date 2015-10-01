@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace MemeticaMeDeLaCerda
 {
-	[Activity (Label = "ContactsActivity")]			
+	[Activity (Label = "ContactsActivity", Icon="@drawable/ContactsMenu")]			
 	public class ContactsActivity : Activity
 	{
 		protected override void OnCreate (Bundle bundle)

@@ -17,24 +17,23 @@ public final class R {
     }
     public static final class id {
         public static final int BTEnviar=0x7f070007;
-        public static final int BTRegistrar=0x7f070014;
-        public static final int ContactImage=0x7f07000c;
-        public static final int ContactName=0x7f07000d;
-        public static final int ContactsList=0x7f07000b;
-        public static final int ContactsListView=0x7f07000e;
-        public static final int ETNombreUsuario=0x7f070011;
-        public static final int ETNumeroTelefono=0x7f070013;
+        public static final int BTRegistrar=0x7f070013;
+        public static final int ContactImage=0x7f07000b;
+        public static final int ContactName=0x7f07000c;
+        public static final int ContactsList=0x7f07000a;
+        public static final int ContactsListView=0x7f07000d;
+        public static final int ETNombreUsuario=0x7f070010;
+        public static final int ETNumeroTelefono=0x7f070012;
         public static final int LinearLayout1=0x7f070000;
-        public static final int TVMemeticame=0x7f07000f;
-        public static final int TVNombreUsuario=0x7f070010;
-        public static final int TVNumeroTelefono=0x7f070012;
+        public static final int TVMemeticame=0x7f07000e;
+        public static final int TVNombreUsuario=0x7f07000f;
+        public static final int TVNumeroTelefono=0x7f070011;
         public static final int buttonAddToDo=0x7f070003;
-        public static final int checkToDoItem=0x7f070015;
+        public static final int checkToDoItem=0x7f070014;
         public static final int container=0x7f070005;
-        public static final int friendLabel=0x7f07000a;
         public static final int listViewToDo=0x7f070004;
         public static final int meLbl=0x7f070009;
-        public static final int menu_refresh=0x7f070016;
+        public static final int menu_refresh=0x7f070015;
         public static final int messageEdit=0x7f070006;
         public static final int messagesContainer=0x7f070008;
         public static final int textNewToDo=0x7f070002;
