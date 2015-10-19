@@ -30,9 +30,9 @@ namespace MemeticaMeDeLaCerda
 
 		//Adapter to map the items list to the view
 		//private ToDoItemAdapter adapter;
-
+		//#############################################################################
 		const string applicationURL = @"https://memeticamedelacerda.azure-mobile.net/";
-		const string applicationKey = @"dRFJDonNeDsjdNiuJGZMXIVJZDIwnD44";
+		const string applicationKey = @"itRtJEADXzxEJleWjnHnmaIQGXZPsI38";
 
 		const string localDbFilename = "localstore.db";
 
