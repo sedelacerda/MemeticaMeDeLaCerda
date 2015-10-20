@@ -13,14 +13,17 @@ using Android.Telephony;
 using Android.Content;
 using System.Collections.Generic;
 using System.Timers;
+using Gcm.Client;
+using Android.Util;
 
 namespace MemeticaMeDeLaCerda
 {
+	
 	[Activity (Label = "ChatActivity", Icon="@drawable/ContactsMenu")]			
 	public class ChatActivity : Activity
 	{
 		//Mobile Service Client reference
-		private MobileServiceClient client;
+		public MobileServiceClient client { get; private set; }
 
 		//Mobile Service sync table used to access data
 		private IMobileServiceSyncTable<Message> MessageTable;
@@ -30,7 +33,7 @@ namespace MemeticaMeDeLaCerda
 		//private ToDoItemAdapter adapter;
 
 		const string applicationURL = @"https://memeticamedelacerda.azure-mobile.net/";
-		const string applicationKey = @"dRFJDonNeDsjdNiuJGZMXIVJZDIwnD44";
+		const string applicationKey = @"itRtJEADXzxEJleWjnHnmaIQGXZPsI38";
 
 		const string localDbFilename = "localstore.db";
 
@@ -39,6 +42,27 @@ namespace MemeticaMeDeLaCerda
 		List<Message> mensajes = new List<Message> ();
 		ListView TVmessages;
 
+		//#######################################################
+		// Create a new instance field for this activity.
+		static ChatActivity instance = new ChatActivity();
+
+		// Return the current activity instance.
+		public static ChatActivity CurrentActivity
+		{
+			get
+			{
+				return instance;
+			}
+		}
+		// Return the Mobile Services client.
+		public MobileServiceClient CurrentClient
+		{
+			get
+			{
+				return client;
+			}
+		}
+		//####################################################
 
 		protected override async void OnCreate (Bundle bundle)
 		{
@@ -57,6 +81,20 @@ namespace MemeticaMeDeLaCerda
 			// Create the Mobile Service Client instance, using the provided
 			// Mobile Service URL and key
 			client = new MobileServiceClient (applicationURL, applicationKey);
+
+			//#####################################################################
+			// Set the current instance of TodoActivity.
+			instance = this;
+
+			// Make sure the GCM client is set up correctly.
+			GcmClient.CheckDevice(this);
+			//GcmClient.CheckManifest(this);
+
+			// Register the app for push notifications.
+			GcmClient.Register(this, ToDoBroadcastReceiver.senderIDs);
+
+			//######################################################################
+
 			await InitLocalStoreAsync();
 
 			// Get the Mobile Service sync table instance to use
@@ -196,5 +234,7 @@ namespace MemeticaMeDeLaCerda
 			builder.Create ().Show ();
 		}
 	}
+
+
 }
 

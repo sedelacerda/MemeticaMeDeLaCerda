@@ -80,6 +80,7 @@ public class MonoPackageManager {
 class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		"MemeticaMeDeLaCerda.dll",
+		"GCM.Client.dll",
 		"Microsoft.WindowsAzure.Mobile.dll",
 		"Microsoft.WindowsAzure.Mobile.Ext.dll",
 		"Microsoft.WindowsAzure.Mobile.SQLiteStore.dll",

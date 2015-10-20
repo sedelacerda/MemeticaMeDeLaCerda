@@ -180,3 +180,6 @@ C:\Users\Seba\Documents\Xamarin Projects\MemeticaMeDeLaCerda_Xamarin_Android\Mem
 C:\Users\Seba\Documents\Xamarin Projects\MemeticaMeDeLaCerda_Xamarin_Android\MemeticaMeDeLaCerda\obj\Debug\res\drawable-xhdpi\missingcontact.png
 C:\Users\Seba\Documents\Xamarin Projects\MemeticaMeDeLaCerda_Xamarin_Android\MemeticaMeDeLaCerda\obj\Debug\R.cs.flag
 C:\Users\Seba\Documents\Xamarin Projects\MemeticaMeDeLaCerda_Xamarin_Android\MemeticaMeDeLaCerda\obj\Debug\uploadflags.txt
+C:\Users\Seba\Documents\Xamarin Projects\MemeticaMeDeLaCerda_Xamarin_Android\MemeticaMeDeLaCerda\bin\Debug\GCM.Client.dll
+C:\Users\Seba\Documents\Xamarin Projects\MemeticaMeDeLaCerda_Xamarin_Android\MemeticaMeDeLaCerda\bin\Debug\Microsoft.WindowsAzure.Mobile.pdb
+C:\Users\Seba\Documents\Xamarin Projects\MemeticaMeDeLaCerda_Xamarin_Android\MemeticaMeDeLaCerda\bin\Debug\Microsoft.WindowsAzure.Mobile.Ext.pdb

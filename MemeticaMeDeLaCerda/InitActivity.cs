@@ -81,11 +81,13 @@ namespace MemeticaMeDeLaCerda
 
 			// Get the Mobile Service sync table instance to use
 			UserTable = client.GetSyncTable <User> ();
+
 			/*
 			AddItem ("agustin", "34lkndjh23jhb4kskj4", "+56992320387");
 			AddItem ("pedrod", "hskjhdfg897djhsdmk3", "+56989995553");
 			AddItem ("pedros", "kjndfn8s934mn4mn2n", "+56982474868");
 			*/
+
 			OnRefreshItemsSelected();
 
 		}

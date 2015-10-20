@@ -1,4 +1,5 @@
 C:\Users\Seba\Documents\Xamarin Projects\MemeticaMeDeLaCerda_Xamarin_Android\MemeticaMeDeLaCerda\obj\Debug\assemblies\MemeticaMeDeLaCerda.dll
+C:\Users\Seba\Documents\Xamarin Projects\MemeticaMeDeLaCerda_Xamarin_Android\MemeticaMeDeLaCerda\obj\Debug\assemblies\GCM.Client.dll
 C:\Users\Seba\Documents\Xamarin Projects\MemeticaMeDeLaCerda_Xamarin_Android\MemeticaMeDeLaCerda\obj\Debug\assemblies\Microsoft.WindowsAzure.Mobile.dll
 C:\Users\Seba\Documents\Xamarin Projects\MemeticaMeDeLaCerda_Xamarin_Android\MemeticaMeDeLaCerda\obj\Debug\assemblies\Microsoft.WindowsAzure.Mobile.Ext.dll
 C:\Users\Seba\Documents\Xamarin Projects\MemeticaMeDeLaCerda_Xamarin_Android\MemeticaMeDeLaCerda\obj\Debug\assemblies\Microsoft.WindowsAzure.Mobile.SQLiteStore.dll

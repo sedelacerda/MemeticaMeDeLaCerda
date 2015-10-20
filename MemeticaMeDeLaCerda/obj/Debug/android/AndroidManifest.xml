@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="MemeticaMeDeLaCerda.MemeticaMeDeLaCerda">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="memeticamedelacerda.memeticamedelacerda">
   <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="19" />
   <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme" android:name="mono.android.app.Application" android:debuggable="true">
     <activity android:icon="@drawable/contactsmenu" android:label="@string/app_name" android:theme="@style/AppTheme" android:name="md51cb45fefca83c2f89cb4ebae101605c8.InitActivity">
@@ -10,18 +10,40 @@
     </activity>
     <activity android:icon="@drawable/contactsmenu" android:label="ContactsActivity" android:name="md51cb45fefca83c2f89cb4ebae101605c8.ContactsActivity" />
     <activity android:icon="@drawable/contactsmenu" android:label="ChatActivity" android:name="md51cb45fefca83c2f89cb4ebae101605c8.ChatActivity" />
+    <receiver android:permission="com.google.android.c2dm.permission.SEND" android:name="md51cb45fefca83c2f89cb4ebae101605c8.ToDoBroadcastReceiver">
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+        <category android:name="memeticamedelacerda" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+        <category android:name="memeticamedelacerda" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="com.google.android.gcm.intent.RETRY" />
+        <category android:name="memeticamedelacerda" />
+      </intent-filter>
+    </receiver>
+    <service android:name="md51cb45fefca83c2f89cb4ebae101605c8.PushHandlerService" />
     <activity android:label="Web Authenticator" android:name="md588920fb9403ed228b036d6919cddd329.FormAuthenticatorActivity" />
     <activity android:label="Web Authenticator" android:name="md588920fb9403ed228b036d6919cddd329.WebAuthenticatorActivity" />
-    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="MemeticaMeDeLaCerda.MemeticaMeDeLaCerda.mono.MonoRuntimeProvider.__mono_init__" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="memeticamedelacerda.memeticamedelacerda.mono.MonoRuntimeProvider.__mono_init__" />
     <receiver android:name="mono.android.Seppuku">
       <intent-filter>
         <action android:name="mono.android.intent.action.SEPPUKU" />
-        <category android:name="mono.android.intent.category.SEPPUKU.MemeticaMeDeLaCerda.MemeticaMeDeLaCerda" />
+        <category android:name="mono.android.intent.category.SEPPUKU.memeticamedelacerda.memeticamedelacerda" />
       </intent-filter>
     </receiver>
   </application>
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_PHONE_STATE" />
   <uses-permission android:name="android.permission.READ_CONTACTS" />
+  <permission android:name="com.example.gcm.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+  <uses-permission android:name="com.example.gcm.permission.C2D_MESSAGE" />
+  <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <permission android:name="memeticamedelacerda.memeticamedelacerda.permission.C2D_MESSAGE" />
+  <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+  <uses-permission android:name="memeticamedelacerda.memeticamedelacerda.permission.C2D_MESSAGE" />
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
 </manifest>
